@@ -28,8 +28,8 @@ class SingleStringTexMobject(SVGMobject):
         "template_tex_file_body": TEMPLATE_TEX_FILE_BODY,
         "stroke_width": 0,
         "fill_opacity": 1.0,
-        "background_stroke_width": 5,
-        "background_stroke_color": BLACK,
+        "background_stroke_width": 0,
+        "background_stroke_color": WHITE,
         "should_center": True,
         "height": None,
         "organize_left_to_right": False,
@@ -175,7 +175,7 @@ class TexMobject(SingleStringTexMobject):
             num_submobs = len(sub_tex_mob.submobjects)
             new_index = curr_index + num_submobs
             if num_submobs == 0:
-                # For cases like empty tex_strings, we want the corresponing
+                # For cases like empty tex_strings, we want the corresponding
                 # part of the whole TexMobject to be a VectorizedPoint
                 # positioned in the right part of the TexMobject
                 sub_tex_mob.submobjects = [VectorizedPoint()]

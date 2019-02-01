@@ -167,7 +167,7 @@ class FadeInFrom(FadeInAndShiftFromDirection):
 
 class FadeInFromDown(FadeInAndShiftFromDirection):
     """
-    Essential a more convenient form of FadeInAndShiftFromDirection
+    Essentially a more convenient form of FadeInAndShiftFromDirection
     """
     CONFIG = {
         "direction": DOWN,

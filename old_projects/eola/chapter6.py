@@ -1,5 +1,5 @@
 from big_ol_pile_of_manim_imports import *
-from ka_playgrounds.circuits import Resistor, Source, LongResistor
+#from ka_playgrounds.circuits import Resistor, Source, LongResistor
 
 class OpeningQuote(Scene):
     def construct(self):

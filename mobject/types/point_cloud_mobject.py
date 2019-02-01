@@ -173,7 +173,7 @@ class PMobject(Mobject):
             setattr(self, attr, partial_array)
 
 
-# TODO, Make the two implementations bellow non-redundant
+# TODO, Make the two implementations below non-redundant
 class Mobject1D(PMobject):
     CONFIG = {
         "density": DEFAULT_POINT_DENSITY_1D,

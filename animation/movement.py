@@ -3,7 +3,6 @@ from constants import *
 from animation.animation import Animation
 from utils.config_ops import digest_config
 
-
 class Homotopy(Animation):
     CONFIG = {
         "run_time": 3,
@@ -37,7 +36,7 @@ class SmoothedVectorizedHomotopy(Homotopy):
 class ComplexHomotopy(Homotopy):
     def __init__(self, complex_homotopy, mobject, **kwargs):
         """
-        Complex Hootopy a function Cx[0, 1] to C
+        Complex Homotopy a function C x [0, 1] to C
         """
         def homotopy(x, y, z, t):
             c = complex_homotopy(complex(x, y), t)

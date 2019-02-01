@@ -80,7 +80,7 @@ def dvi_to_svg(dvi_file, regen_if_exists=False):
     Converts a dvi, which potentially has multiple slides, into a
     directory full of enumerated pngs corresponding with these slides.
     Returns a list of PIL Image objects for these images sorted as they
-    where in the dvi
+    were in the dvi
     """
     result = dvi_file.replace(".dvi" if not TEX_USE_CTEX else ".xdv", ".svg")
     if not os.path.exists(result):

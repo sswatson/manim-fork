@@ -2,7 +2,7 @@ import os
 import numpy as np
 
 env_MEDIA_DIR = None
-MEDIA_DIR = "#ERROR#"
+MEDIA_DIR = "/Users/sswatson/Unsynced/math-videos/"
 
 try:
     env_MEDIA_DIR = os.getenv("MEDIA_DIR")
@@ -24,6 +24,7 @@ else:
     )
 
 if not os.path.exists(MEDIA_DIR):
+    print(MEDIA_DIR)
     raise Exception("""
         Redefine MEDIA_DIR by changing the MEDIA_DIR
         environment constant or by changing

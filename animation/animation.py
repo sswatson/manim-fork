@@ -60,12 +60,12 @@ class Animation(object):
         return self
 
     def update_submobject(self, submobject, starting_sumobject, alpha):
-        # Typically ipmlemented by subclass
+        # Typically implemented by subclass
         pass
 
     def get_all_mobjects(self):
         """
-        Ordering must match the ording of arguments to update_submobject
+        Ordering must match the ordering of arguments to update_submobject
         """
         return self.mobject, self.starting_mobject
 

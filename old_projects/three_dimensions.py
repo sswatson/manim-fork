@@ -109,5 +109,3 @@ class Sphere(Mobject2D):
 
     def unit_normal(self, coords):
         return np.array(coords) / get_norm(coords)
-
-        
